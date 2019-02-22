@@ -224,7 +224,7 @@ def TokeniseTweet(tweet):
 def WordNGrams(tweet, n):
 	word_ngrams_list = []
 	#print tweet
-	for num in range(0, len(tweet)+1-n):
+	for num in xrange(0, len(tweet)+1-n):
 		wordngrams = ' '.join(tweet[num:num+n])
 		word_ngrams_list.append(wordngrams)
 	return word_ngrams_list
@@ -242,7 +242,7 @@ def WordNGrams(tweet, n):
 '''
 def CharNGrams(tweet, n):
 	char_ngrams_list = []
-	for num in range(0, len(tweet)-n+1):
+	for num in xrange(0, len(tweet)-n+1):
 		charngrams = tweet[num:num+n]
 		char_ngrams_list.append(charngrams)
 	return char_ngrams_list
@@ -342,6 +342,6 @@ def PreProcessing(tweet):
 		   word_n_grams, upper_case_words, intensifiers, negations, \
 		   word_count, char_count, word_length_mean, laugh_words
 
-#tweet = "Heyyyyy I am verrryyy happppyyyy #U @U http://google.com LOLLL"
-#word = PreProcessing(tweet)
-#print word
+tweet = "Heyyyyy I am verrryyy happppyyyy #U @U http://google.com LOLLL"
+word = PreProcessing(tweet)
+print word

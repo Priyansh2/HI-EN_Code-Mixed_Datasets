@@ -98,10 +98,10 @@ def getpunctuations(processed_tweet):
 
 # Extract all the features of a tweet and create a feature vector.
 def preprocess(key, tweet):
-	id_tweet_map, tweet_id_map = get_tweet_map()
-	id_tokenised_tweet_map = get_id_tokenised_tweet_map()
+	#id_tweet_map, tweet_id_map = get_tweet_map()
+	#id_tokenised_tweet_map = get_id_tokenised_tweet_map()
 	
-	tokenized_tweet = id_tokenised_tweet_map[key]
+	#tokenized_tweet = id_tokenised_tweet_map[key]
 	
 	# Get emoticons, hashtags, mentions and URLs for a given tweet.
 	emoticons = getemoticons(tweet)
@@ -124,4 +124,5 @@ def preprocess(key, tweet):
 
 
 
-# tweet = "En el día @shyamli de hoy #27óS sólo me @sahil sale del alma gritar ¡¡VIVA ESPAÑA! ! http://t.co/w9Bmsf4TUK :) (: #NLP"
+tweet = "En el día @shyamli de hoy #27óS sólo me @sahil sale del alma gritar ¡¡VIVA ESPAÑA! ! http://t.co/w9Bmsf4TUK :) (: #NLP"
+
